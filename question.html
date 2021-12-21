@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="questions.css">
+</head>
+<body>
+    <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>    
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">Sanskar Patni</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Logout</a></li>
+    </ul>    
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo blue-grey-text text-lighten-5"><b>Labyrinth 11.0</b></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href=""><i class="material-icons">home</i></a></li>
+                <li><a href="">Rules</a></li>
+                <li><a href="">Credits</a></li>
+                <li><a href="">Forum</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Player<i class="large right material-icons">account_circle</i></a></li>
+                <li><a href="" title="Leaderboard"><img src="lbi.png" class="responsive" height="80%" style="margin-top: 10%;" alt="Leaderboard"> </a></li>
+            </ul>
+        </div>
+    </nav>    
+    <div class="row">  
+        <div class="col s8 offset-s2 valign-wrapper">
+            <div id="q-box" class="white container hoverable">
+                <form action="">
+                    <label class="flow-text" for="ans">
+                      <!-- PHP content, put here -->
+
+                      <!-- PHP content, till here -->
+                    </label>
+                    <input type="text" id="ans">
+                    <input type="submit" class="btn" value="Next">
+                </form>
+            </div>
+        </div>       
+    </div> 
+    <footer>
+        <img src="sf_logo.png" id="sf_logo">
+    </footer>  
+  <script>
+    $(document).ready(function(){
+        $(".dropdown-trigger").dropdown();
+    });
+  </script>
+</body>
+</html>

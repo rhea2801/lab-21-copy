@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moravia</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="question">
+        <img id="img" src="still.png" alt="still">
+        <button id="btn" onclick="start()">Začněte leštit</button>
+        <p id="para">Odvedl si dobrou práci!</p>
+    </div>
+    <script>
+        function start() {
+            document.getElementById("img").src = "gif.gif";
+            document.getElementById("btn").style.opacity = "0";
+            setTimeout(function () {
+                document.getElementById("btn").style.display = "none";
+            }, 300);
+            setTimeout(function () {
+                document.getElementById("img").style.opacity = "0";
+
+                document.getElementById("para").style.display = "block";
+
+                setTimeout(function () {
+                    document.getElementById("para").style.opacity = "1";
+                }, 1500);
+                setTimeout(function () {
+                    document.getElementById("img").src = "gif2.gif";
+                    document.getElementById("img").style.opacity = "1";
+                }, 1000);
+            }, 7500);
+
+
+        }
+    </script>
+</body>
+
+</html>

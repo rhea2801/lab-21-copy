@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Abel);
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: content-box;
+}
+
+body {
+  background-image: url("eyes_and_ears_are_our_best_friends.jpg");
+  background-size: cover;
+  font-family: "Abel";
+}
+
+.date-time {
+  position: fixed;
+  bottom: 0px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.time {
+  color: #fcfcfc;
+  font-size: 8em;
+  margin: 0;
+}
+
+.date {
+  text-transform: capitalize;
+  color: #fcfcfc;
+  font-size: 2em;
+  margin: 0;
+}

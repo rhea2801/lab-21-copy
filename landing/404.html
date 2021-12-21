@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Labyrinth 11.0 | Spring Fest 2021</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Anton|Passion+One|PT+Sans+Caption"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link rel="icon" href="../images/favicon.png" />
+		<link rel="stylesheet" type="text/css" href="404.css" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+		/>
+		<script src="../js/jquery-3.2.1.min.js"></script>
+	</head>
+	<body onload="setTimeout('redirect()', 500)">
+		<!-- Error Page -->
+		<div class="error">
+			<div class="container-floud">
+				<div class="col-xs-12 ground-color text-center">
+					<div class="container-error-404">
+						<div class="clip">
+							<div class="shadow"><span class="digit thirdDigit"></span></div>
+						</div>
+						<div class="clip">
+							<div class="shadow"><span class="digit secondDigit"></span></div>
+						</div>
+						<div class="clip">
+							<div class="shadow"><span class="digit firstDigit"></span></div>
+						</div>
+						<div class="msg">
+							OH!
+							<span class="triangle"></span>
+						</div>
+					</div>
+					<h2 class="h1">
+						We Only Support Desktop/Laptop
+						<br />
+						Grab Your Nearest
+					</h2>
+				</div>
+			</div>
+		</div>
+		<!-- Error Page -->
+		<script type="text/javascript">
+			function randomNum() {
+				"use strict";
+				return Math.floor(Math.random() * 9) + 1;
+			}
+			var loop1,
+				loop2,
+				loop3,
+				time = 30,
+				i = 0,
+				number,
+				selector3 = document.querySelector(".thirdDigit"),
+				selector2 = document.querySelector(".secondDigit"),
+				selector1 = document.querySelector(".firstDigit");
+			loop3 = setInterval(function() {
+				"use strict";
+				if (i > 40) {
+					clearInterval(loop3);
+					selector3.textContent = 4;
+				} else {
+					selector3.textContent = randomNum();
+					i++;
+				}
+			}, time);
+			loop2 = setInterval(function() {
+				"use strict";
+				if (i > 80) {
+					clearInterval(loop2);
+					selector2.textContent = 0;
+				} else {
+					selector2.textContent = randomNum();
+					i++;
+				}
+			}, time);
+			loop1 = setInterval(function() {
+				"use strict";
+				if (i > 100) {
+					clearInterval(loop1);
+					selector1.textContent = 4;
+				} else {
+					selector1.textContent = randomNum();
+					i++;
+				}
+			}, time);
+		</script>
+		
+		<script type="text/javascript">
+
+			$(window).on('load resize',function(){
+					if($(window).width() > 950){
+						window.location = "./index.php"
+					}
+					
+				});
+		</script>
+
+	</body>
+</html>

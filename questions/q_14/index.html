@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tiktok question</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="question">
+        <div id="riddle">
+            <p>Now that I see you are smart enough to have made it to level xyz, I will riddle you
+                this. How many words ?
+                Now take that and multiply it by eight, then subtract three.
+            </p>
+
+            <p style="color: white; padding: 0;" class="riddle">Nice, you were smart enough to catch this</p>
+
+            <input class="riddle" type="text" placeholder="Enter answer here">
+            <button class="riddle" type="submit" onclick="check()">Submit</button>
+
+            <p style="color: white; padding: 0; float: right;">And this too.</p>
+        </div>
+        <p class="clue para" style="display: none; margin: 0 auto;">
+            <span> 0 &lt; x &lt; 3 ;&nbsp;&nbsp; 0 &lt; y &lt; 2</span><br>
+            <span style="color: magenta;"> 6 &lt; x &lt; 7 ;&nbsp;&nbsp; 0 &lt; y &lt; 9</span><br>
+            <span> 5 &lt; x &lt; 6 ;&nbsp;&nbsp; 1 &lt; y &lt; 11</span><br>
+
+            <span style="color: blue;"> 4 &lt; x &lt; 5 ;&nbsp;&nbsp; 1 &lt; y &lt; 10</span><br>
+
+            <span> 6 &lt; x &lt; 9 ;&nbsp;&nbsp; 9 &lt; y &lt; 10</span><br>
+
+            <span> 2 &lt; x &lt; 4 ;&nbsp;&nbsp; 2 &lt; y &lt; 3 </span><br>
+
+            <span style="color: magenta;"> 7 &lt; x &lt; 8 ;&nbsp;&nbsp; 8 &lt; y &lt; 9</span><br>
+
+            <span> 3 &lt; x &lt; 6 ;&nbsp;&nbsp; 0 &lt; y &lt; 1 </span><br>
+
+
+        </p>
+    </div>
+
+    <script>
+        function check() {
+            var ans = document.querySelector("input").value;
+            if (ans == 389) {
+                document.getElementById("riddle").style.display = "none";
+                document.querySelector(".clue").style.display = "block";
+                //ans.style.display = "none";
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

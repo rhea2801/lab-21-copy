@@ -1,0 +1,31 @@
+
+  
+  .container1 {
+    width: 100%;
+  }
+  
+  .container1 img {
+    height: 300px;
+    float: right;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+  }
+  
+  .container1 .qrcode {
+    height: 300 px;
+    float: left;
+    color: yellow;
+    width: 50%;
+  }
+  
+  .container1 .qrcode img {
+    float: left;
+    height: 300 px;
+  }
+  
+  .container1 .qrcode::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /*# sourceMappingURL=index.css.map */

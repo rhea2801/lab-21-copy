@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Bodoni Moda", serif;
+}
+
+body {
+  background-image: url("bg.jpg");
+}
+
+.question {
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
+  left: 30%;
+  right: 30%;
+  background-color: white;
+}
+
+.para {
+  padding: 20%;
+}
+
+#ipt,
+#btn {
+  display: block;
+  margin: 0 auto;
+  outline: none;
+}
+
+#btn {
+  margin-top: 30px;
+  border: none;
+
+  border-radius: 10%;
+  padding: 10px;
+  background-color: #e6e6e6;
+}
+
+#btn:hover {
+  cursor: pointer;
+}

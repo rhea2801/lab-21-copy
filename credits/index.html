@@ -1,0 +1,167 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Credits</title>
+    <link rel="shortcut icon" href="../sf_logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <a href="../index.php"><div class="backBtn" >
+        <span class="line tLine"></span>
+        <span class="line mLine"></span>
+        <span class="label">Back</span>
+        <span class="line bLine"></span>
+    </div></a>
+
+
+    <div class="about">
+        <div class="abouttext">
+            <h1>&nbsp;ABOUT&nbsp;</h1>
+            <p>Presented by Spring Fest, Labyrinth 11.0 is an Online Mind Maze which can be quite confusing and
+                frustrating. Answers can always be extracted by finding,following and linking all hidden clues and hints
+                presented in your screen or webpage. Clues can be kept anywhere in the page like an image, URL etc.
+                Using other possible senses apart from common-sense may be helpful. Remember! Hints can knock your door
+                via anything possible under the sky. Ignoring any of them may lead to severe struggle.</p>
+        </div>
+    </div>
+
+    <div class="credits">
+        <div class="credittext">
+            <h1>CREDITS</h1>
+            <div class="profile rh">
+                <div class="profilepicleft"><img id="rhea-pfp" class='pfp' src="rhea.jpeg" alt=""></div>
+                <div class="container rhea">
+                    <div class="rectangle r-c">
+                        <div class="notification-text rhea">
+
+                            <span id="rheaspan">&nbsp;&nbsp;Rhea Sundaresan</span>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="profile sa">
+
+                <div class="container sanskar">
+                    <div class="rectangle sa-c">
+                        <div class="notification-text">
+
+
+                            <span id="sanskarspan">&nbsp;&nbsp;Sanskar Patni</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="profilepicright"><img id="sanskar-pfp" class="pfp" src="sanskar.jpeg" alt=""></div>
+
+            </div>
+            <div class="profile sh">
+                <div class="profilepicleft"><img id="shivoy-pfp" class="pfp" src="shivoy.jpg" alt=""></div>
+                <div class="container shivoy">
+                    <div class="rectangle sh-c">
+                        <div class="notification-text">
+
+
+                            <span id="shivoyspan">&nbsp;&nbsp;Shivaay Dixit</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="profile ku">
+
+                <div class="container ">
+                    <div class="rectangle k-c">
+                        <div class="notification-text">
+
+
+                            <span id="kushagraspan">&nbsp;&nbsp;Kushagra Khullar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="profilepicright"><img id="kushagra-pfp" class="pfp" src="kushagra.jpg" alt=""></div>
+            </div>
+        </div>
+
+    </div>
+    <!-- <script src="script.js"></script>
+    
+    rc.style.backgroundColor = "rgba(255,255,255,0.8)";
+    rc.style.color = "rgba(0,0,0,0.8)";
+    -->
+    <script>
+
+        $(function () {
+            $('.rh').hover(function () {
+                $('.rh').css('cursor', 'pointer');
+                $('.r-c').css('backgroundColor', 'rgba(255,255,255,0.8)');
+                $('#rhea-pfp').css('transform', 'scale(1.25,1.25)');
+                $('#rhea-pfp').css('transform', 'scale(1.25,1.25)');
+                $('#rheaspan').html("&nbsp;&nbsp; <a target='blank' href='https://www.facebook.com/rhea2801/'><i class='fa fa-facebook'></i></a>&nbsp;&nbsp;&nbsp; <a href='https://www.github.com/rhea2801' target='blank'><i class='fa fa-github'></i></a>");
+            }, function () {
+                // on mouseout, reset the background colour
+                $('.rh').css('cursor', 'default');
+                $('.r-c').css('backgroundColor', 'rgba(255,255,255,0.25)');
+                $('#rhea-pfp').css('transform', '');
+                $('#rheaspan').html("&nbsp;&nbsp;Rhea Sundaresan");
+            });
+
+
+
+            $('.sa').hover(function () {
+                $('.sa').css('cursor', 'pointer');
+                $('.sa-c').css('backgroundColor', 'rgba(255,255,255,0.8)');
+                $('#sanskar-pfp').css('transform', 'scale(1.25,1.25)');
+                $('#sanskar-pfp').css('transform', 'scale(1.25,1.25)');
+                $('#sanskarspan').html("&nbsp;&nbsp; <a target='blank' href='https://www.facebook.com/sanskar.patni.9/'><i class='fa fa-facebook'></i></a>&nbsp;&nbsp;&nbsp; <a href='https://www.github.com/sanskar28' target='blank'><i class='fa fa-github'></i></a>");
+            }, function () {
+                // on mouseout, reset the background colour
+                $('.sa').css('cursor', 'default');
+                $('.sa-c').css('backgroundColor', 'rgba(255,255,255,0.25)');
+                $('#sanskar-pfp').css('transform', '');
+                $('#sanskarspan').html("&nbsp;&nbsp;Sanskar Patni");
+            });
+
+
+
+            $('.sh').hover(function () {
+                $('.sh').css('cursor', 'pointer');
+                $('.sh-c').css('backgroundColor', 'rgba(255,255,255,0.8)');
+                $('#shivoy-pfp').css('transform', 'scale(1.25,1.25)');
+                $('#shivoy-pfp').css('transform', 'scale(1.25,1.25)');
+                $('#shivoyspan').html("&nbsp;&nbsp; <a target='blank' href='https://www.facebook.com/profile.php?id=100011022995972'><i class='fa fa-facebook'></i></a>&nbsp;&nbsp;&nbsp; <a href='https://www.github.com/shiv-aay' target='blank'><i class='fa fa-github'></i></a>");
+            }, function () {
+                // on mouseout, reset the background colour
+                $('.sh').css('cursor', 'default');
+                $('.sh-c').css('backgroundColor', 'rgba(255,255,255,0.25)');
+                $('#shivoy-pfp').css('transform', '');
+                $('#shivoyspan').html("&nbsp;&nbsp;Shivaay Dixit");
+            });
+
+
+
+            $('.ku').hover(function () {
+                $('.ku').css('cursor', 'pointer');
+                $('.k-c').css('backgroundColor', 'rgba(255,255,255,0.8)');
+                $('#kushagra-pfp').css('transform', 'scale(1.25,1.25)');
+                $('#kushagra-pfp').css('transform', 'scale(1.25,1.25)');
+                $('#kushagraspan').html("&nbsp;&nbsp; <a target='blank' href='https://www.facebook.com/kushagra.khullar.3/'><i class='fa fa-facebook'></i></a>&nbsp;&nbsp;&nbsp; <a href='https://github.com/khullarkushagra' target='blank'><i class='fa fa-github'></i></a>");
+            }, function () {
+                // on mouseout, reset the background colour
+                $('.ku').css('cursor', 'default');
+                $('.k-c').css('backgroundColor', 'rgba(255,255,255,0.25)');
+                $('#kushagra-pfp').css('transform', '');
+                $('#kushagraspan').html("&nbsp;&nbsp;Kushagra Khullar");
+            });
+        });
+    </script>
+</body>
+
+</html>

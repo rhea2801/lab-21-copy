@@ -1,0 +1,9 @@
+.containerworldmap {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    left: 0px;
+    overflow: hidden;
+  }
+  path {fill: lightgray; stroke: white; transition: 0.2s ease-in-out;}
+  path:hover {fill: gray;}
